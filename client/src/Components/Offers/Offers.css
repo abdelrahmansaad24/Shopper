@@ -1,0 +1,70 @@
+.offers {
+  padding-top: 70px;
+}
+
+.offers .container {
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+/*left part*/
+
+.offers .container .left .first {
+  font-size: 60px;
+  font-weight: 500;
+  color: #373636;
+}
+
+.offers .container .left .second {
+  text-transform: uppercase;
+  color: #626262;
+}
+
+.offers .container .left .check-now {
+  background-color: #ff4141;
+  color: white;
+  width: 180px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.offers .container .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.offers .container .right img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .offers .container .right {
+    display: none;
+  }
+  .offers .container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .offers .container .left .first {
+    font-size: 45px;
+  }
+
+  .offers .container .left .second {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,72 @@
+.personal-info > p {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* .personal-info .personal-info-form {
+    display: flex;
+    flex-direction: ;
+} */
+
+.personal-info .personal-info-form p {
+  font-size: 14px;
+  color: gray;
+}
+
+.personal-info .personal-info-form input {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  outline: none;
+  padding: 5px;
+  border: 1px solid rgb(231, 229, 229);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.personal-info .update-myInfo {
+  background-color: black;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  margin-top: 10px;
+}
+
+.personal-info .update-myInfo:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.personal-info .update-myInfo:active {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.personal-info .errorMsg {
+  margin-top: -20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  color: red !important;
+  font-size: 13px !important;
+}

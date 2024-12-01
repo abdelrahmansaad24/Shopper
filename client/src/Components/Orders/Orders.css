@@ -1,0 +1,78 @@
+.orders-container .orders-content .my-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.orders-header {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: rgb(85, 84, 84);
+}
+
+.orders-content .my-order .order-left p {
+  padding: 2px 0;
+  color: rgb(69, 68, 68);
+}
+
+.orders-content .my-order .order-left p:first-child {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(69, 68, 68);
+}
+
+.orders-content .my-order .order-left p:nth-child(2) {
+  font-size: 14px;
+}
+
+.orders-content .my-order .order-left p:nth-child(3) {
+  font-size: 14px;
+}
+
+.orders-container .orders-content hr {
+  border: none;
+  height: 2px;
+  background-color: grey;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 15px 0;
+}
+
+.orders-container .orders-content .order-right button {
+  border: none;
+  padding: 10px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  background-color: #f45454;
+  font-size: 12px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.orders-container .orders-content .order-right button:hover {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+.orders-container .orders-content .order-right button:active {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}

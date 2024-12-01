@@ -1,0 +1,109 @@
+.category .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.category .container .banner {
+  width: 100%;
+}
+
+.category .container .middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: var(--paragraph-color);
+}
+
+.category .container .category-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.category .container .category-products .item .item-image {
+  width: 100%;
+}
+
+.container .catgory-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0 120px 0;
+}
+
+.container .catgory-bottom button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  color: rgb(130, 127, 127);
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.container .catgory-bottom button:hover {
+  transform: scale(1.1);
+}
+
+.container .catgory-bottom button:active {
+  transform: scale(0.9); /* Scale button to 90% when clicked */
+}
+
+.category .container .middle span {
+  font-weight: bold;
+}
+
+.disable-button {
+  display: none;
+}
+
+.sort-by {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f1f1f1;
+  padding: 5px 7.5px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 110px; /* Set width as needed */
+  cursor: pointer;
+  outline: none; /* Remove default focus outline */
+}
+
+/* Hover and focus styles */
+.custom-select:hover,
+.custom-select:focus {
+  border-color: #aaa;
+}
+
+/* Styling options */
+.custom-select option {
+  background-color: white; /* Option background color */
+  color: #333; /* Option text color */
+  padding: 5px 7.5px;
+  width: inherit;
+}
+
+.custom-select option:checked {
+  background-color: #3498db;
+  color: white;
+}

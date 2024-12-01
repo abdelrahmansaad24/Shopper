@@ -1,0 +1,120 @@
+.product-reviews {
+  position: relative;
+  margin-top: 20px;
+}
+
+.arrow-icons .arrow-left,
+.arrow-icons .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: rgb(211, 197, 197);
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.arrow-icons .arrow-left:active,
+.arrow-icons .arrow-right:active {
+  background-color: whitesmoke;
+}
+
+.arrow-icons .arrow-left:hover,
+.arrow-icons .arrow-right:hover {
+  padding: 12px;
+}
+
+.arrow-right {
+  right: -25px;
+}
+
+.arrow-left {
+  left: -25px;
+}
+
+.product-reviews .slider {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  overflow-x: scroll;
+}
+
+.product-reviews .slider::-webkit-scrollbar {
+  display: none;
+}
+
+.product-reviews .slider .review {
+  min-width: calc((100% / 3) - 10px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.product-reviews .slider .review .review-owner {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.product-reviews .slider .review .review-owner .user-info .name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.product-reviews .slider .review .review-owner .user-info .country {
+  font-size: 11px;
+  color: gray;
+}
+
+.product-reviews .slider .review .user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.product-reviews .slider .review > p {
+  color: rgb(100, 100, 100);
+}
+
+@media (max-width: 767px) {
+  .product-reviews .slider .review {
+    min-width: calc((100% / 2) - 7.5px);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-reviews .slider .review {
+    min-width: calc(100% - 5px);
+  }
+  .arrow-right {
+    right: -20px;
+  }
+
+  .arrow-left {
+    left: -20px;
+  }
+}

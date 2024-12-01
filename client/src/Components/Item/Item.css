@@ -1,0 +1,75 @@
+.item {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+}
+
+.item:hover {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 10px;
+  background-color: whitesmoke;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.item-content .item-price {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.item-image {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  cursor: pointer;
+}
+
+.item-image:hover .item {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+.item p {
+  font-size: 16px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.item-price .new_price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item-price .old_price {
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+/* .item-image {
+  width: 100%;
+} */

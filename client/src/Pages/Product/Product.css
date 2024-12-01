@@ -1,0 +1,21 @@
+.product .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.product .container .product-path {
+  margin-top: 30px;
+  color: rgb(119, 118, 118);
+  font-weight: 600;
+}
+
+.product .container .product-path img {
+  width: 6px;
+}
+
+@media (max-width: 500px) {
+  .product .container .product-path {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,90 @@
+/*landing*/
+
+.landing {
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}
+.landing .container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  align-items: center;
+}
+
+/*landing left*/
+
+.landing-header {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5d5a5a;
+}
+.landing .container .landing-left .wave {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.landing-left {
+  flex: 1;
+}
+
+.landing-left p {
+  font-size: 80px;
+  font-weight: 700;
+  color: #373636;
+}
+.landing .container .landing-left .wave img {
+  width: 60px;
+}
+
+.latest-collection {
+  background-color: #ff4141;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 40px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.latest-collection p {
+  font-size: 15px;
+  color: white;
+}
+
+.landing-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-right img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 767px) {
+  .landing-right {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .landing-left > p {
+    font-size: 60px;
+  }
+  .wave p {
+    font-size: 60px;
+  }
+  .latest-collection p {
+    font-weight: 400;
+  }
+}
